@@ -26,14 +26,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '#@(+^eush5-^)!r2*+y0^zjaruk0%=i3tv$_t2h7#^p1(f0u#7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -115,6 +117,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+WHITENOISE_USE_FINDERS = True
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 
 # Static files (CSS, JavaScript, Images)
