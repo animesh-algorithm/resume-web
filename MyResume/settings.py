@@ -140,4 +140,11 @@ else:
 # if sys.argv[1] != 'runserver':
 #     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 1
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
 django_heroku.settings(locals())
