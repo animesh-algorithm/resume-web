@@ -1,8 +1,6 @@
 import django_heroku
 import os
 import sys
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
 
 """
 Django settings for MyResume project.
@@ -17,11 +15,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "MyResume.settings")
-
-application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -140,15 +133,15 @@ STATICFILES_STORAGE = 'whitenoise.storage.GzipManifestStaticFilesStorage'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'staticfiles')
-    ]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# if DEBUG:
+#     STATICFILES_DIRS = [
+#         os.path.join(BASE_DIR, 'staticfiles')
+#     ]
+# else:
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_URL = '/staticfiles/'
-MEDIA_URL = '/images/'
+# STATIC_URL = '/staticfiles/'
+# MEDIA_URL = '/images/'
 
 # if sys.argv[1] != 'runserver':
 #     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
