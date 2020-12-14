@@ -133,15 +133,15 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
-MEDIA_URL = '/images/'
-
 if DEBUG:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'staticfiles')
     ]
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_URL = '/staticfiles/'
+MEDIA_URL = '/images/'
 
 # if sys.argv[1] != 'runserver':
 #     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
