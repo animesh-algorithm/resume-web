@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '#@(+^eush5-^)!r2*+y0^zjaruk0%=i3tv$_t2h7#^p1(f0u#7'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['animesh-sharma-resume.herokuapp.com', '*']
 
