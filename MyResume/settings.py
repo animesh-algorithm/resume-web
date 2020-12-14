@@ -1,6 +1,5 @@
 import django_heroku
 import os
-import sys
 
 """
 Django settings for MyResume project.
@@ -28,7 +27,7 @@ SECRET_KEY = '#@(+^eush5-^)!r2*+y0^zjaruk0%=i3tv$_t2h7#^p1(f0u#7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['animesh-sharma-resume.herokuapp.com']
+ALLOWED_HOSTS = ['animesh-sharma-resume.herokuapp.com', '*']
 
 # Application definition
 
@@ -125,7 +124,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-WHITENOISE_USE_FINDERS = True
+# WHITENOISE_USE_FINDERS = True
 # STATICFILES_STORAGE = 'whitenoise.storage.GzipManifestStaticFilesStorage'
 
 
