@@ -28,7 +28,7 @@ SECRET_KEY = '#@(+^eush5-^)!r2*+y0^zjaruk0%=i3tv$_t2h7#^p1(f0u#7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'animesh-sharma-resume.herokuapp.com', '0.0.0.0']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -126,7 +126,7 @@ USE_L10N = True
 USE_TZ = True
 
 WHITENOISE_USE_FINDERS = True
-STATICFILES_STORAGE = 'whitenoise.storage.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.GzipManifestStaticFilesStorage'
 
 
 
