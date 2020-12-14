@@ -28,7 +28,7 @@ SECRET_KEY = '#@(+^eush5-^)!r2*+y0^zjaruk0%=i3tv$_t2h7#^p1(f0u#7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://animesh-sharma-resume.herokuapp.com/']
 
 # Application definition
 
