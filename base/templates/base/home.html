@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <title>Animesh Sharma - Resume</title>
+	<link rel="stylesheet" href="{% static '/css/main.css' %}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -17,56 +17,218 @@
 				<div class="card card-body h-100  border-info" id="profile-wrapper">
 					<img id="profile-pic" src="{% static 'images/animesharma.jpg' %}" >
 					<hr>
-					<h4>Hi I'm Dennis!</h4>
-					<p>I love coding, doing research and collaborating</p>
+					<h4>Hi I'm Animesh Sharma!</h4>
+					<span>Data Scientist | Data Analyst | Machine Learning Engineer | Deep Learning Engineer | Full Stack Web Developer | Blogger</span>
+					<!-- <br>
+					<p>I am passionate about using data and common sense to generate simple and implementable solution to complex problems</p> -->
+					<hr>
+					<ul class="contact">
+						<li><ion-icon name="call"></ion-icon><span> 7389666837</span></li>
+						<br>
+						<li><ion-icon name="mail"></ion-icon> <span> animesharma3@gmail.com</span></li>
+					</ul>
+					<ul class="social-links">
+						<li><a href="https://github.com/animesharma3" target="/blank"><ion-icon name="logo-github"></ion-icon></a></li>
+						<li><a href="https://www.linkedin.com/in/animesh-sharma-73300a161" target="/blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+						<li><a href="https://www.twitter.com/animesharma3" target="/blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+						<li><a href="" target='/'><ion-icon name="logo-medium"></ion-icon></a></li>
+					</ul>
 				</div>
 			</div>
 
 			<div class="col-md-9">
 				<div class="card card-body h-100  border-info">
-					<h4>Profile Summary</h4>
+					<h4 class='text-center'>Profile Summary</h4>
 					<hr>
-					<p>3 months after writing my first Hello World program on September 8th 2017 (While working in the marketing department) I had convinced my boss to let me take a stab at building a better version of the outdated laboratory management system my company was running on.</p>
-
-					<p>Before I knew it we transitioned from the old system and we're on to mine. My newbie self was now in charge of hosting hundreds of thousands of lab samples and supporting thousands of clients.</p>
-
-					<p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</p>
-
-					<ul class="social-links">
-						<li><img class="social" src="{% static 'images/facebook.png' %}"></li>
-						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
-						<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
-						<li><img class="social" src="{% static 'images/youtube.png' %}"></li>
-					</ul>
+					<ul class='profile' style="list-style-type: disc; margin: 20px">
+						<li>Experience in creating <b>Artificial Intelligence applications</b> with <b>Machine Learning, Deep Learning with Python</b>.
+							Deep Learning Techniques includes <b>
+							 	ANN,CNN,RNN and Advanced RNN with LSTM, GRU, Encoders, Decoders,
+								Attention Models.
+							Deep Learning Techniques includes </b></li>
+						<li>Machine Learning Techniques includes<b> Linear Regression, Logistic Regression, Naive Bayes, SVM, Ensemble Techniques(Random Forest, AdaBoost, Gradient Boosting, XGBoost), ARIMA and SARIMAX, PCA, t-SNE, KNN, K-means etc.</b></li>
+						<li>Skilled in libraries such as <b>Pytorch, Keras, Tensorflow, Sklearn, Numpy, Pandas, Matplotlib, Plotly, Seaborn, Beautiful Soup etc.</b></li>
+						<li>Extensive knowledge of working with <b>NoSQL databases</b> like <b>MongoDB</b> and <b>SQL databases</b> like <b>MySQL, SQLite and PostgreSQL.</b></li>
+						<li>Additional skills of <b>Django, NodeJS, Deno, FastAPI, Flask, Streamlit, PHP, MVC, AJAX and XML, React, JavaScript, Bootstrap, CSS, HTML, Git and GitHub.</b></li>
+						<li>Also Worked Independently for <b>Deployment of Models using Dockers and Kubernetes in Heroku Cloud Platform (IAAS).</b></li>
+						<li>Rich experience in all phases of the <b>Data Science life-cycle (Data Collection, EDA, Feature Engineering, Feature Selection, Model Building, Hyperparameter tuning, Model Evaluation and Model Deployment)</b>.</li>
+						<li>Expertise in <b>preprocessing</b> and <b>analyzing complex, high-volume, high-dimensionality text, numerical and categorical data</b></li>
+						<li>Worked independently in various <b>end to end projects</b> of <b>NLP, Recommendation System, Regression, Classification, Time Series Forecasting etc.</b></li>
+						<li>					<b>Contributor to the Data Science Community</b>
+						</li>
+					</ul>	
+		
 
 				</div>
 			</div>
 		</div>
 		<br>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<div class="card card-body h-100">
-					<h5>My Experience as a Developer</h5>
-					<hr>
-					<p>Full stack developer at FOI laboratories.</p>
-					<p>Designed, built and managed a lab management system as a sole developer. System supported thousands of customers with a UI for Lab Admins and a customer dashboard.</p>
+					<div class="table-responsive-md">
+						<table class="table">
+							<tr>
+								<th></th>
+								<th><h5>What I Know</h5></th>
+							</tr>
+						  	<tr>
+							  	<th>Languages</th>
+								<td>Python, JavaScript, R, Typescript, Julia, C++, Java, PHP.</td>
+							</tr>
+							<tr>
+								<th>Backend Technologies</th>
+								<td>Django, Node, Express, Flask, FastAPI, Deno.</td>
+							</tr>
+							<tr>
+								<th>Frontend Technologies</th>
+								<td>React, Bootstrap, MaterialUI, ES6, JQuery, CSS, HTML.</td>
+							</tr>
+							<tr>
+								<th>Databases</th>
+								<td>MongoDB, MySQL, PostgreSQL, SQLite.</td>
+							</tr>
+							<tr>
+								<th>AI libraries</th>
+								<td>Tensorflow, Keras, Pytorch, Scikit-Learn.</td>
+							</tr>
+							<tr>
+								<th>Deployment Platform</th>
+								<td>AWS S3 Bucket, AWS EC2 Instance, Heroku Cloud Platform, Python Anywhere</td>
+							</tr>
+							<tr>
+								<th>IDEs and Softwares</th>
+								<td>Visual Studio Code, Jupyter Notebook, RStudio, Spyder, PyCharm, Google Colaboratory, Brackett, Atom, Sublime Text</td>
+							</tr>
+						</table>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card card-body h-100">
+					<div class="table-responsive-md">
+						<table class='table'>
+							<tr><th><h4>Core Competencies</h4>
+							</th></tr>
+							<tr><td><b>Data Science</b></td></tr>
+							<tr><td><b>Machine Learning</b></td></tr>
+							<tr><td><b>Deep Learning</b></td></tr>
+							<tr><td><b>Full Stack Web Development</b></td></tr>
+							<tr><td><b>Recommender Systems</b></td></tr>
+							<tr><td><b>Predictive Modelling</b></td></tr>
+							<tr><td><b>NLP Sentimental Analysis</b></td></tr>
+							<tr><td><b>Statistics</b></td></tr>
+							<tr><td><b>Data Visualization</b></td></tr>					
+							<!-- <tr><td><b>Linear Algebra</b></td></tr> -->
+							<!-- calculus, oops, dbms, hypothesis testing -->
+						</table>
 					</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>What I Know</h5>
-					<hr>
-					<p>Python, Django, HTML/CSS, JavaScript/Jquery, React, Postgres, AWS and APIs such as google maps, JavaScript charts and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
-					<p>PS: Working on Node JS, Mongo DB and Machine Learning.</p>
 				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<a href="https://bit.ly/2KwZCKu" target='/blank'>
+				<div class="card card-body h-100">
+					<h5>Project 1</h5>
+					<b>Anime Recommender</b>
+					<hr>
+					<p>Content Based Anime Recommender System is an end to end unsupervised ML project built using Flask and deployed to Heroku Cloud Platform. All the DS lifecycle has been followed in order - Data Collection, EDA, Data pre-processing, Feature Engineering, Model building, Model Evaluation and Model Deployment.</p>
+				</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://bit.ly/2Wpj52i" target='/blank'>
+				<div class="card card-body h-100">
+					<h5>Project 2</h5>
+					<b>SMS Spam Detector</b>
+					<hr>
+					<p>SPAM SMS Detector is an end-to-end Machine Learning NLP project built using Flask and deployed to Heroku Cloud Platform. This app will help you predict whether the SMS that you recieved is legit (HAM) or SPAM. The</p>
+					
+				</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://car-price-predictor-1.herokuapp.com/" target='/blank'>
+				<div class="card card-body h-100">
+					<h5>Project 3</h5>
+					<b>Car Price Predictor</b>
+					<hr>
+					<p>Car Price Predictor is an end-to-end Machine Learning Regression project, built using Flask and deployed on Heroku Cloud Platform, which will help an individual/dealer to predict the price they can expect for any of their old car they would like to sell</p>
+				</div>
+				</a>
 			</div>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card card-body h-100">
-					<h5>How I Learn</h5>
+					<h5 class='text-center'>Certifications and Courses</h5>
+					
+					<div class="table-responsive-md">
+						<table class='table text-center'>
+							<tr>
+								<th>Name</th>
+								<th>Issuing Organization</th>
+							</tr>
+							<tr>
+								<td><b>Machine Learning, Data Science and Deep Learning with Python</b></td>
+								<td>Udemy</td>
+							</tr>
+							<tr>
+								<td><b>Node.js API Masterclass with Express and MongoDB</b></td>
+								<td>Udemy</td>
+							</tr>
+							<tr>
+								<td><b>Data Science and Machine Learning Workshop</b></td>
+								<td>SVVV</td>
+							</tr>
+							<tr>
+								<td><b>Programming with Python</b></td>
+								<td>Udemy</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5 class='text-center'>Education</h5>
+					
+					<div class="table-responsive-md">
+						<table class='table text-center'>
+							<tr>
+								<th>Degree</th>
+								<th>Institute</th>
+								<th>CGPA/Percentage</th>
+							</tr>
+							<tr>
+								<th>Bachelor's of Computer Applications</th>
+								<td>Shri Vaishnav Vidhyapeeth VishvaVidhylaya</td>
+								<td>8.5</td>
+							</tr>
+							<tr>
+								<th>12th</th>
+								<td>Sardana Public School (MP Board)</td>
+								<td>82%</td>
+							</tr>
+							<tr>
+								<th>10th</th>
+								<td>Holy Trinity School (CBSE)</td>
+								<td>7.8</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- <div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Long Term Goals</h5>
 					<hr>
 					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
 
@@ -85,7 +247,7 @@
 			</div>
 		</div>
 		<br>
-	</div>
-
+	</div> -->
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>

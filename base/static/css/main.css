@@ -2,6 +2,10 @@ body{
 	background-color:#b14242!important;
 }
 
+.contact {
+	font-size: 15px;
+}
+
 #profile-wrapper{
 	text-align: center;
 }
@@ -19,10 +23,22 @@ ul{
     list-style-type: none;
 }
 
+a, a:hover{
+	color: black;
+	text-decoration: none;
+}
 
-.social-links ul, li{
+.social-links ul, .social-links li, .contact li{
 	list-style-type:none;
 	display: inline-block;
+}
+
+.profile {
+	font-size: 17px;
+}
+
+.social-links li{
+	font-size: 30px;
 }
 
 .social{
